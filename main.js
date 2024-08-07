@@ -3,13 +3,13 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
 
         var campoA = parseFloat(document.getElementById('campoA').value);
         var campoB = parseFloat(document.getElementById('campoB').value);
-        var menssagemDiv = document.getElementById('Menssagem');
+        var mensagemDiv = document.getElementById('mensagem');
 
         if (campoB > campoA) {
-            menssagemDiv.textContent = "O formulario é valido!";
-            menssagemDiv.className = "Menssagem Success";
+            mensagemDiv.textContent = "O formulario é valido!";
+            mensagemDiv.className = "success";
         } else {
-            menssagemDiv.textContent ="O número do Camp B deve ser maior que o numero do Campo A";
-            menssagemDiv.className = 'menssagem error';
+            mensagemDiv.textContent ="O número do Camp B deve ser maior que o numero do Campo A";
+            mensagemDiv.className = 'error';
         }
 });
